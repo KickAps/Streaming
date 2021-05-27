@@ -1,0 +1,7 @@
+@import "~bootstrap";
+
+.dropdown-warning {
+    @extend .btn;
+    @extend .btn-warning;
+    @extend .dropdown-toggle
+}
