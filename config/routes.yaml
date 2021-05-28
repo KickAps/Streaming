@@ -1,3 +1,7 @@
 index:
    path: /
    controller: App\Controller\ChannelController::index
+
+eurosport1:
+   path: /eurosport1
+   controller: App\Controller\Eurosport1Controller::index

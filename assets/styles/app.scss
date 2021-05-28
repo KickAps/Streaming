@@ -1,7 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import "~bootstrap";
 
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-title {
+    @extend .text-center;
+    @extend .text-warning;
+    @extend .bg-secondary;
+    font-weight: 700;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
 .dropdown-warning {
     @extend .btn;
     @extend .btn-warning;
     @extend .dropdown-toggle
+}
+
+.bg-secondary-light {
+    background-color: #bcc3ca;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }

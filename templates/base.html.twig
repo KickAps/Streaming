@@ -11,7 +11,9 @@
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
-    <body class="bg-secondary">
+    <body class="bg-secondary-light">
         {% block body %}{% endblock %}
     </body>
+
+    {{ include('footer.html.twig')}}
 </html>

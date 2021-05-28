@@ -11,7 +11,7 @@ class ChannelController extends AbstractController
     public function index(): Response
     {
         return $this->render('channel/index.html.twig', [
-            'controller_name' => 'ChannelController',
+            'title' => 'Aide',
         ]);
     }
 }
