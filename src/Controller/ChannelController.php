@@ -7,17 +7,37 @@ use Symfony\Component\HttpFoundation\Response;
 
 class ChannelController extends AbstractController
 {
+    protected const CANAL_SPORT_1 = "Canal+ Sport";
     protected const EUROSPORT_1 = "Eurosport 1";
     protected const EUROSPORT_2 = "Eurosport 2";
+    protected const EQUIPE_21 = "Equipe 21";
+    protected const BEIN_1 = "beIN 1";
+    protected const BEIN_2 = "beIN 2";
+    protected const BEIN_3 = "beIN 3";
 
     protected static function curlAndParseStreamingChannel(string $channel) {
 
         switch ($channel) {
+            case self::CANAL_SPORT_1:
+                $endPoint = "canal_sport-1";
+                break;
             case self::EUROSPORT_1:
                 $endPoint = "eurosport_1";
                 break;
             case self::EUROSPORT_2:
                 $endPoint = "eurosport_2";
+                break;
+            case self::EQUIPE_21:
+                $endPoint = "equipe_21";
+                break;
+            case self::BEIN_1:
+                $endPoint = "bein_1-1";
+                break;
+            case self::BEIN_2:
+                $endPoint = "bein_2";
+                break;
+            case self::BEIN_3:
+                $endPoint = "bein_3";
                 break;
             default:
                 $endPoint = "error";

@@ -9,3 +9,23 @@ eurosport1:
 eurosport2:
    path: /eurosport2
    controller: App\Controller\Eurosport2Controller::index
+
+bein1:
+   path: /bein1
+   controller: App\Controller\BeIN1Controller::index
+
+bein2:
+   path: /bein2
+   controller: App\Controller\BeIN2Controller::index
+
+bein3:
+   path: /bein3
+   controller: App\Controller\BeIN3Controller::index
+
+canalsport1:
+   path: /canalsport1
+   controller: App\Controller\CanalSport1Controller::index
+
+equipe21:
+   path: /equipe21
+   controller: App\Controller\Equipe21Controller::index
