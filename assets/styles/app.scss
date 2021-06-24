@@ -8,7 +8,13 @@ html {
 }
 
 body {
+    height: 100%;
     font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    position: sticky;
+    top: 100%;
 }
 
 .main-title {
@@ -18,9 +24,17 @@ body {
     font-weight: 700;
     word-spacing: 5px;
     letter-spacing: 1px;
+    font-size: 45px;
 }
+
+.custom-navbar {
+    background-color: #999da0;
+    padding: 10px;
+}
+
 .dropdown-warning {
     @extend .btn;
+    @extend .btn-lg;
     @extend .btn-warning;
     @extend .dropdown-toggle
 }

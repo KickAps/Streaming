@@ -5,3 +5,7 @@ index:
 eurosport1:
    path: /eurosport1
    controller: App\Controller\Eurosport1Controller::index
+
+eurosport2:
+   path: /eurosport2
+   controller: App\Controller\Eurosport2Controller::index
